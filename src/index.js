@@ -8,6 +8,7 @@ const app = express();
 dotenv.config();
 const port = process.env.PORT || 8080;
 
+//middleware
 app.use(cors());
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(require('./router.js'));
